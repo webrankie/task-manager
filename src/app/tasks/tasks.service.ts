@@ -45,7 +45,7 @@ export class TaskService {
     });
   }
 
-  removeTask(taskId: string) {
+  removeTask(taskId: string | undefined) {
     this.tasks = this.tasks.filter((task) => task.id !== taskId);
   }
 }
