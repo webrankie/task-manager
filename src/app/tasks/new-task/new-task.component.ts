@@ -21,6 +21,7 @@ export class NewTaskComponent {
     this.close.emit();
   }
 
+  //onSubmit
   onSubmit() {
     this.taskService.addTask(
       {
